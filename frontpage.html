@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="loginregister.css">
+  <title>Career Quest</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale = 1, minimum-scale = 1,, maximum-scale =1" />
+
+  <link rel="icon" href="Images\android-chrome-192x192.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+  <link rel="textstlyes" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="frontpage.css">
+</head>
+
+<body>
+  <header>
+    <navigationbar>
+      <div class="navigationbarmid">
+        <img src="Images\LOGO3.jpeg" alt="Logo">
+      </div>
+      <div class="leftside">
+        <ul>
+          <li class="submenuitem">
+            <a href="Pages/index_10th.html">Career Options After 10th</a>
+            <ul class="submenu">
+              <li><a href="Pages/intermediate.html">Intermediate</a></li>
+              <li><a href="Pages/iti.html">ITI</a></li>
+              <li><a href="Pages/poly.html">Polytechnic</a></li>
+              <li><a href="Pages/paramedical10.html">Paramedical</a></li>
+              <li><a href="Pages/short_term_course.html">Short Term Courses</a></li>
+              <li><a href="Pages/govt.html">Government Job</a></li>
+            </ul>
+          </li>
+          <li class="submenuitem">
+            <a href="Pages/after 12.html">Career Options After 12th</a>
+            <ul class="submenu">
+              <li><a href="Pages/Engineeri_ng.html">Engineering</a></li>
+              <li><a href="Pages/medical.html">Medical</a></li>
+              <li><a href="Pages/teacher.html">Teaching</a></li>
+              <li><a href="Pages/govrn%20job.html">Jobs</a></li>
+              <li><a href="Pages//Degree.html">Degree diploma_courses</a></li>
+              <li><a href="Pages//diploma_courses.html">Diploma</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="rightside">
+        <ul>
+          <a href="https://www.facebook.com/login.php"><i class="fab fa-facebook-f"></i> </a>
+          <a href="https://twitter.com/i/flow/login"><i class="fab fa-twitter"></i> </a>
+          <a href="https://www.instagram.com/?hl=en"><i class="fab fa-instagram"></i> </a>
+          <a href="https://www.linkedin.com/login"><i class="fab fa-linkedin-in"></i> </a>
+         
+          <button class="btnLogin-popup" id="loginBtn"><i class="fa-solid fa-user"></i></button>
+          <p id="welcomeMessage"></p>
+          <button class="btnLogout" id="logoutBtn">Logout</button>
+
+        </ul>
+      </div>
+    </navigationbar>
+
+
+    <div class="banner">
+      <img src="Images\Banner New.png" alt="">
+    </div>
+
+
+    <div class="container1">
+      <h1>Featured Career Options</h1>
+      <div class="carousel">
+        <div class="carousel-item">
+          <div class="card">
+            <img src="Images\Top Jobs For Civil Engineering Based On ETABS_1_1680615587 (4).png" alt="">
+            <div class="container">
+              <button class="btn">
+                <a href="Pages/Engineeri_ng.html"> Engineering </a>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="card">
+            <img src="Images\national-doctors-day (1) (1).webp" alt="">
+            <button class="btn">
+              <a href="Pages/medical.html">Medical</a>
+            </button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="card">
+            <img src="Images\Teaching (1).jpeg" alt="">
+            <div class="container">
+              <button class="btn">
+                <a href="Pages/teacher.html">Teaching</a>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="card">
+            <img src="Images\Designing (1).jpg" alt="">
+            <div class="container">
+              <button class="btn">
+                <a href="Pages/designing.html">Designing</a>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="card">
+            <img src="Images\Management1 (1).jpeg" alt="">
+            <div class="container">
+              <button class="btn">
+                <a href="Pages//management.html">Management</a>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="card">
+            <img src="Images\Arm (1).jpeg" alt="">
+            <div class="container">
+              <button class="btn">
+                <a href="Pages/govrn job.html">Government Jobs</a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+      <script>
+        $(document).ready(function() {
+          $('.carousel').carousel({
+            padding: 200
+          });
+          autoplay();
+
+          function autoplay() {
+            $('.carousel').carousel('next');
+            setTimeout(autoplay, 4500);
+          }
+        });
+      </script>
+    </div>
+
+
+
+
+  </header>
+
+
+
+  <div class="wrapper">
+    <span class="icon-close" id="closeLogin"><ion-icon name="close"></ion-icon></span>
+
+    <div class="form-box login">
+      <h2>Login</h2>
+      <form id="loginForm">
+        <div class="input-box">
+          <span class="icon"><ion-icon name="mail"></ion-icon></span>
+          <input type="email" required>
+          <label>Email</label>
+        </div>
+        <div class="input-box">
+          <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+          <input type="password" required>
+          <label>Password</label>
+        </div>
+        <div class="remember-forgot">
+          <label><input type="checkbox">Remember me</label>
+          <a href="#">Forgot Password</a>
+        </div>
+        <button type="submit" class="btn">Login</button>
+
+        <div class="login-register">
+          <p>Don't have an account?<a href="#" class="register-link" id="showRegister">Register</a></p>
+        </div>
+      </form>
+    </div>
+
+    <div class="form-box register">
+      <h2>Registration</h2>
+      <form id="registerForm">
+        <div class="input-box">
+          <span class="icon"><ion-icon name="person"></ion-icon></span>
+          <input type="text" required>
+          <label>Username</label>
+        </div>
+        <div class="input-box">
+          <span class="icon"><ion-icon name="mail"></ion-icon></span>
+          <input type="email" required>
+          <label>Email</label>
+        </div>
+        <div class="input-box">
+          <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+          <input type="password" required>
+          <label>Password</label>
+        </div>
+        <div class="remember-forgot">
+          <label><input type="checkbox" required>I agree to the terms and conditions.</label>
+        </div>
+        <button type="submit" class="btn">Register</button>
+        <div class="login-register">
+          <p>Already have an account. <a href="#" class="login-link" id="showLogin">Login</a></p>
+        </div>
+      </form>
+    </div>
+    <div id="welcomeMessage" style="display: none; text-align: center; margin-bottom: 10px;"></div>
+    <button id="logoutBtn" style="display: none;">Logout</button>
+
+  </div>
+
+  <script src="script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+
+
+  <div class="container2">
+
+    <div class="cards1">
+      <div class="block1">
+        <a href="Pages/index_10th.html">
+          <div class="imagebox">
+            <img src="Images\After 10th.jpg">
+            <h5><b>After 10th</b></h5>
+            <h6>
+              <br>
+              Choose your future with confidence! Our expert team offers personalized counseling and assessments to help you find the perfect career path after 10th grade. Unlock your potential and pursue a rewarding future!
+            </h6>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="cards1">
+      <div class="block1">
+        <a href="Pages/after 12.html">
+          <div class="imagebox">
+            <img src="Images\After 12th.jpg">
+            <h5><b>After 12th</b></h5>
+            <h6>
+              <br>
+              Discover your passion and make informed decisions after 12th grade. Our experienced advisors provide valuable insights, guiding you towards a successful and fulfilling career!
+            </h6>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="cards1">
+      <a href="Pages/exams.html">
+        <div class="block1">
+          <div class="imagebox">
+              <img src="Images\After Graduation.jpg">
+            <h5><b>Exams at a Glance</b></h5>
+            <h6>
+              <br>
+              "Attention, eager learners! Your path to success awaits. Dive into the realm of active examinations and let curiosity guide your way. Take the first step towards a brighter future, where dreams turn into reality.
+            </h6>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="cards1">
+      <a href="Pages\Talenttest.html">
+        <div class="block1">
+          <div class="imagebox">
+            <a href="Pages/Talenttest.html">
+              <img src="Images\Skill Development.jpg">
+            <h5><b>Talent Tests</b></h5>
+            <h6>
+              <br>
+              "Discover Your Hidden Genius! Unleash Your Talent Today! Explore a World of Thrilling Talent Tests, Where Your Skills Take Center Stage. Reach for the Stars! Shine Bright, and Let Your Talent Soar!"
+            </h6>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+  <section2>
+    <div class="container3">
+      <h3> Reviews </h3>
+
+      <div class="swiper mySwiper2">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="Testimonial-content">
+              <div>
+                <!-- <img src=" " alt="quote"> -->
+                <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="user-image">
+              </div>
+              <div class="Testimonial-text">
+                <p>I can't express how grateful I am for finding this amazing career guidance website. As an engineering student, I was feeling lost and uncertain about my career options. Your platform provided me with a clear roadmap and guided me
+                  towards the perfect path. The personalized counseling sessions were a game-changer, giving me the confidence to pursue my dreams.
+                  Today, I am on my way to becoming a successful engineer, all thanks to your invaluable support!</p>
+                <h2>Vaibhav Jain</h2>
+                Verified User <i class="fas fa-check-circle"></i>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="Testimonial-content">
+              <div>
+                <img src="https://randomuser.me/api/portraits/men/2.jpg" alt="user-image">
+              </div>
+              <div class="Testimonial-text">
+                <p>I stumbled upon your website during my college days when I was uncertain about my career path. The valuable insights, aptitude tests, and career recommendations proved incredibly beneficial. Thanks to your platform, I was able to
+                  explore diverse opportunities and find my passion.
+                  I recommend your website to all students who need reliable career guidance!</p>
+                <h2>Mridul Pandey</h2>
+                Verified User <i class="fas fa-check-circle"></i>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="Testimonial-content">
+              <div>
+                <img src="https://randomuser.me/api/portraits/men/3.jpg" alt="user-image">
+              </div>
+              <div class="Testimonial-text">
+                <p>I was feeling lost after my class 10th exams, not knowing which stream to choose. Thanks to your website, I gained valuable insights into various career options and found my true calling.
+                  Your guidance has been a game-changer for me, and I feel more confident about my future choices now. Highly recommended!"</p>
+                <h2>Karan Saxena</h2>
+                Verified User <i class="fas fa-check-circle"></i>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="Testimonial-content">
+              <div>
+                <img src="https://randomuser.me/api/portraits/men/4.jpg" alt="user-image">
+              </div>
+              <div class="Testimonial-text">
+                <p>As a class 12th student with the pressure of board exams and career decisions looming over me, I stumbled upon your website. It provided a comprehensive overview of different career paths and helped me align my interests with the
+                  right choices.
+                  The personalized counseling further boosted my confidence. Your platform is a lifesaver for students like me!</p>
+                <h2>Ankit Goyal</h2>
+                Verified User <i class="fas fa-check-circle"></i>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="Testimonial-content">
+              <div>
+                <img src="https://randomuser.me/api/portraits/women/5.jpg" alt="user-image">
+              </div>
+              <div class="Testimonial-text">
+                <p>After completing my graduation, I was overwhelmed by the numerous career options available. Your website acted as a guiding light, simplifying the process and giving me clarity about my career path. The resources and expert advice
+                  helped me make informed decisions and set realistic goals.
+                  Thank you for being a reliable companion on my journey to success!</p>
+                <h2>Ishika Mishra</h2>
+                Verified User <i class="fas fa-check-circle"></i>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="Testimonial-content">
+              <div>
+                <img src="https://randomuser.me/api/portraits/women/6.jpg" alt="user-image">
+              </div>
+              <div class="Testimonial-text">
+                <p>I was stuck in a job that didn't align with my aspirations and skills. Discovering your website was a turning point in my life. The career change resources and personalized counseling gave me the courage to step out of my comfort
+                  zone and pursue my dream career.
+                  Your platform empowered me to take charge of my professional life, and I couldn't be happier with the results!</p>
+                <h2>Shrishti Deshmukh</h2>
+                Verified User <i class="fas fa-check-circle"></i>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="Testimonial-content">
+              <div>
+                <img src="https://randomuser.me/api/portraits/men/7.jpg" alt="user-image">
+              </div>
+              <div class="Testimonial-text">
+                <p>As a concerned parent, I was anxious about my child's future after class 10th. Your website proved to be a blessing in disguise! It not only offered valuable career guidance but also addressed our queries promptly through the
+                  helpline.
+                  My child is now pursuing their passion, and I can't thank your platform enough for steering them in the right direction.</p>
+                <h2>Amrit Shrivastav</h2>
+                Verified User <i class="fas fa-check-circle"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination">
+      </div>
+    </div>
+  </section2>
+  <footer>
+    <div class="container4">
+      <div class="rights">
+        <p>&copy;2023 Career Quest. All rights are reserved.</p>
+      </div>
+      <div class="row">
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="Footer/about/about_us.html"> About Us</a></li>
+            <li><a href="Footer/services/OurServices.html">Our Services</a></li>
+            <li><a href="Footer/privacy/privacy_policy.html">Privacy Policy</a></li>
+            
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Get Help</h4>
+          <ul>
+            <li><a href="Footer/faq/FAQ.html">FAQ</a></li>
+            <li><a href="Footer/contact/contactus.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Career Doubts</h4>
+          <ul>
+            <li><a href="#">Academics</a></li>
+            <li><a href="#">Jobs</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Follow Us</h4>
+          <div class="social-links">
+            <a href="https://www.facebook.com/login.php"><i class="fab fa-facebook-f"></i> </a>
+            <a href="https://twitter.com/i/flow/login"><i class="fab fa-twitter"></i> </a>
+            <a href="https://www.instagram.com/?hl=en"><i class="fab fa-instagram"></i> </a>
+            <a href="https://www.linkedin.com/login"><i class="fab fa-linkedin-in"></i> </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper2", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      loop: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        320: {
+          slidesPerView: 1,
+        },
+        480: {
+          slidesPerView: 1,
+        },
+        640: {
+          slidesPerView: 3,
+        },
+      }
+    });
+  </script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,94 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f2f2f2;
+  }
+  
+  header {
+    text-align: center;
+    padding: none;
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    padding: 100px;
+  }
+  
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+  }
+  
+  section#exams-course ul {
+    list-style: none;
+  }
+  
+  section#exams-course li {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  section#exams-course h2 {
+    font-size: 1.8rem;
+    color: #007bff;
+    margin-bottom: 10px;
+  }
+  
+  section#exams-course h3 {
+    font-size: 1.4rem;
+  }
+  
+  section#exams-course p {
+    font-size: 1.2rem;
+  }
+  
+  
+  #exams-course {
+    margin: 50px;
+  }
+  
+  .btn{
+    color: #fff;
+    border: none;
+    outline: none;
+    font-size: 17px;
+    margin-top: 10px;
+    padding: 8px, 15px;
+    background-color: #007bff;
+    border-radius: 5px;
+    display: inline-block;
+    text-decoration: none;
+  }
+  .btn:hover{
+    transform: scale(1.03);
+    box-shadow: 0 10px 15px rgba(0,0,0,0.3);
+  }
+  
+  footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+  }
+  
+  footer p {
+    font-size: 1rem;
+  }
+  
+  
+  
+  

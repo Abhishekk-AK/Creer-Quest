@@ -1,0 +1,202 @@
+:root{
+  --grey1:#c8c8c8b1;
+  --grey2:#ffffff;
+  --gradient2:linear-gradient(90deg,var(--grey1), var(--grey2));
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f2f2f2;
+}
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-around; 
+  }
+  
+  
+  .container h1 {
+    width: 100%; 
+    text-align: center;
+    color: #007bff;
+    margin-bottom: 20px;
+  }
+  
+  
+  .container .Courses {
+    width: 30%; 
+    margin-bottom: 20px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff; /* White box background */
+    
+  }
+
+  .container .Courses .designing a{
+    text-decoration: none;
+    text-align: bottom;
+  }
+
+
+
+  .container .Courses .designing img {
+    width: 100%;
+    max-width: 200px; 
+    height: 150px;
+    border-radius: 5px;
+  }
+  
+  .container .Courses .designing h2 {
+    margin-top: 10px;
+    font-size: 1.5rem;
+    color: #007bff;
+  }
+  
+  
+  .container .Courses .designing p {
+    color: #666;
+    line-height: 1.5;
+    
+  }
+
+  .container .Courses .film-making a{
+    text-decoration: none;
+    text-align: bottom;
+  }
+
+  .container .Courses .film-making img {
+    width: 100%;
+    max-width: 200px; 
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  
+  .container .Courses .film-making h2 {
+    margin-top: 10px;
+    font-size: 1.5rem;
+    color: #007bff;
+  }
+  
+  
+  .container .Courses .film-making p {
+    color: #666;
+    line-height: 1.5;
+  }
+
+  .container .Courses .management a{
+    text-decoration: none;
+    text-align: bottom;
+  }
+
+  .container .Courses .management img {
+    width: 100%;
+    max-width: 200px; 
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  
+  .container .Courses .management h2 {
+    margin-top: 10px;
+    font-size: 1.5rem;
+    color: #007bff;
+  }
+  
+  
+  .container .Courses .management p {
+    color: #666;
+    line-height: 1.5;
+  }
+
+
+  .container .other-courses {
+    margin-bottom: 10px;
+    padding: 10px 10px 10px 0;
+  }
+  .container .other-courses {
+    color: #007bff;
+  }
+
+  .container .course .containers{
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  
+  .container .course .containers h2 {
+    font-weight: bold;
+    margin-bottom: 2px;
+    margin-top: 5px;
+    color: #007bff;
+
+  }
+
+ .container .course .containers .para {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+ }
+
+  .container .course .containers .para p {
+    width: 50%;
+    font-size: 15px;
+    margin: 5px 5px 5px 40px;
+    padding: 10px 0 20px 20px;
+  }
+
+  .container .course .containers .para img {
+    
+    height: 200px;
+    width: 350px;
+    float: right;
+    margin-left: 100px;
+    
+  }
+  
+   .container .course .containers .learn-more {
+    text-align: bottom;
+    text-decoration: none;
+    font-size: 15px;
+    color: #fff;
+    background-color: #007bff;
+    margin: 0 8px 30px 50px;
+    padding: 10px 20px 10px 20px;
+    border-radius: 5px;
+  }
+
+  .container .course .containers .learn-more:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 15px rgba(0,0,0,0.3);
+}
+
+ .container .course .containers{
+    display: block;
+    text-decoration: none;
+    color: inherit;
+ }
+
+ .container .Courses:hover {
+  background:var(--gradient2);
+}
+
+
+.container .Courses-option a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+  
+

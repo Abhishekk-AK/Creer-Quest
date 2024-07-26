@@ -1,0 +1,90 @@
+:root{
+  --grey1:#c8c8c8b1;
+  --grey2:#ffffff;
+  --gradient2:linear-gradient(90deg,var(--grey1), var(--grey2));
+}
+
+*{
+  font-family: 'Nunito', sans-serif;
+  margin:0; padding:0;
+  box-sizing: border-box;
+  outline: none; border:none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all .2s ease-out;
+}
+
+html{
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+
+
+body{
+  background:#f2f2f2;
+  padding:3rem 7%;
+}
+
+section{
+  padding:2rem 7%;
+}
+
+.heading{
+ color: #003675;
+  padding:0 1rem;
+  padding-top: 2.5rem;
+  text-align: center;
+  font-size: 4rem;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  margin-bottom: 20px
+}
+
+
+
+ .aft{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+  }
+.aft .box{
+    flex:1 1 30rem;
+    border-radius: 1.5rem;
+    border:.1rem solid rgba(0,0,0,.1);
+    padding:1.5rem;
+    position: relative;
+    background: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+
+  .aft .box:hover{
+    background:var(--gradient2);
+  }
+
+  .aft .box img{
+    height:20rem;
+    width:100%;
+  }
+
+  .aft .box .duration{
+    position: absolute;
+    top:1rem; left:1rem;
+    font-size: 2rem;
+    padding:.5rem 1rem;
+    background:#519ae7;
+    color:#ffffff;
+    border-radius: .5rem;
+  }
+
+
+  .aft .box h3{
+    color:#000000;
+    font-size: 2.5rem;
+  }
+
+  .aft .box p{
+    color:#373737;
+    font-size: 1.5rem;
+    padding:.5rem 0;
+  }
